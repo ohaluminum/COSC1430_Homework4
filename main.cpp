@@ -69,11 +69,6 @@ int main()
 			 *Recall that you use getline(inFS2, tempName, ','); to read the antique name, which will not stop reading until it sees a ',' not a line breaker.
 			 */
 		}
-		
-		/*
-		 *inFS leaves the newline character in the stream.
-		 *Adding inFS.ignore() to the next line clears/ignores the newline from the stream.
-		 */
 	}
 	else
 	{
