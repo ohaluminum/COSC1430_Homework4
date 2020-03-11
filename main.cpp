@@ -59,8 +59,15 @@ int main()
 			object_ptr[i].setPrice(tempPrice_float);
 			quantity_ptr[i] = tempQuantity_int;
 
-			//use getline() instead of ignore()
 			getline(inFS2, newline);
+			/*
+			 *Use getline() instead of ignore()
+			 *The instructor's response:
+			 *The default getline() function will read a line until a line breaker is reached, as you already know.
+			 *ignore() is to ignore or clear characters from the input buffer.  
+			 *I suspect for the second txt file, there maybe an extra line breaker in front of each line starting from the second line of antiques. 
+			 *Recall that you use getline(inFS2, tempName, ','); to read the antique name, which will not stop reading until it sees a ',' not a line breaker.
+			 */
 		}
 		
 		/*
